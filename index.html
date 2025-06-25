@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Free AI Image Generator</title>
+  <style>
+    body { font-family: Arial; text-align: center; padding: 20px; background-color: #f2f2f2; }
+    h2 { color: #333; }
+    input, button {
+      padding: 10px;
+      width: 80%;
+      max-width: 400px;
+      margin: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    img {
+      margin-top: 20px;
+      max-width: 90%;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    #status { margin-top: 10px; font-style: italic; color: #666; }
+  </style>
+</head>
+<body>
+  <h2>🎨 Free AI Image Generator</h2>
+  <input type="text" id="prompt" placeholder="Describe your image..." />
+  <br />
+  <button onclick="generateImage()">Generate Image</button>
+  <p id="status"></p>
+  <img id="output" src="" alt="Generated Image" />
+  
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
