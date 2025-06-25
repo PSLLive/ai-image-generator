@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Free AI Image Generator</title>
+  <style>
+    body { font-family: Arial; text-align: center; padding: 20px; }
+    input, button { padding: 10px; width: 300px; margin: 10px; }
+    img { margin-top: 20px; max-width: 100%; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+  <h2>AI Image Generator (Stable Diffusion)</h2>
+  <input type="text" id="prompt" placeholder="Describe your image..." />
+  <br />
+  <button onclick="generateImage()">Generate</button>
+  <p id="status"></p>
+  <img id="output" src="" alt="Generated Image" />
+  
+  <!-- External JS file -->
+  <script src="script.js"></script>
+</body>
+</html>
